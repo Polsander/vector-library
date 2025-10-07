@@ -1,0 +1,22 @@
+# Node / TypeScript build artifacts
+node_modules
+dist
+npm-debug.log
+yarn-error.log
+
+# Docker files
+Dockerfile*
+.dockerignore
+
+# Git / metadata
+.git
+.gitignore
+.env
+.env.*
+*.md
+
+# OS / IDE specific
+.DS_Store
+.vscode
+.idea
+*.swp

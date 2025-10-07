@@ -1,0 +1,8 @@
+# Development Dockerfile
+FROM node:24-alpine
+WORKDIR /app
+
+COPY package*.json tsconfig.json ./
+RUN npm install
+
+COPY . .

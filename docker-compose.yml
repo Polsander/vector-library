@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  server:
+    build:
+      context: ./server
+      dockerfile: ${DOCKERFILE:-Dockerfile}
+    container_name: vector-lib-server
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./server/src:/app/src
+    environment:
+      NODE_ENV: ${NODE_ENV:-prod}
+    command: ${COMMAND:-node dist/app.js}
+
+  # client:
+  #   build: ./client
+  #   container_name: myapp-client
+  #   ports:
+  #     - "5173:5173"
+  #   depends_on:
+  #     - server
