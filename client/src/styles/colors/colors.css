@@ -1,14 +1,28 @@
 
 :root {
-    --bg-color: white;
+    --bg: white;
     --text: black;
     --faded: rgb(231, 231, 231);
     --faded-hover: rgba(207, 207, 207, 0.849);
+
+    --nav-bg: white;
 }
 
 [data-theme='dark'] {
-    --bg-color: rgb(76, 75, 75);
+    --bg: rgb(76, 75, 75);
     --text: rgb(233, 232, 232);
     --faded: rgb(102, 102, 102);
     --faded-hover: rgb(102, 102, 102, 0.849);
+
+    --nav-bg: rgb(228, 226, 226);
+}
+
+@theme {
+    --color-weird:  var(--bg);
+    --color-text: var(--text);
+    --color-faded: var(--faded);
+    --color-faded-hover: var(--faded-hover);
+    
+    --color-nav-bg: var(--nav-bg);
+
 }

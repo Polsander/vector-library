@@ -9,7 +9,7 @@ export const Navbar = () => {
   }
 
   return (
-    <div className='px-16 my-5 flex'>
+    <div className='px-16 my-5 flex bg-weird'>
         <h4>Architect Vectors</h4>
         <button onClick={handleThemeChange}>Mode</button>
     </div>
