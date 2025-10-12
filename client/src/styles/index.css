@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "./colors/colors.css";
+@import "tailwindcss";
+
+/* Components */
+@import "./button.css";
+
+html {
+    font-family: "roboto";
+}
+
+
+
+.architect_vector_content {
+    background-color: var(--bg-color);
+    padding-left: 10em;
+    padding-right: 2em;
+
+    p {
+        color: var(--text);
+    }
+}
