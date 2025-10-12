@@ -12,12 +12,19 @@ services:
       - ./server/src:/app/src
     environment:
       NODE_ENV: ${NODE_ENV:-prod}
-    command: ${COMMAND:-node dist/app.js}
 
-  # client:
-  #   build: ./client
-  #   container_name: myapp-client
-  #   ports:
-  #     - "5173:5173"
-  #   depends_on:
-  #     - server
+  client:
+    build:
+      context: ./client
+      dockerfile: ${CLIENT_DOCKERFILE:-Dockerfile}
+    container_name: myapp-client
+    volumes:
+      - ./client/src:/app/src
+      - ./client/public:/app/public
+      - ./client/index.html:/app/index.html
+    ports:
+      - "80:80"
+    environment:
+      NODE_ENV: ${NODE_ENV:-prod}
+    depends_on:
+      - server

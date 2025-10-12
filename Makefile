@@ -24,13 +24,13 @@ dev:
 	@echo -e "Starting in dev mode: Press CTRL + C to stop"
 	@bash -c '\
 	trap "echo Stopping containers; docker compose down --remove-orphans; exit" SIGINT SIGTERM; \
-	DOCKERFILE=Dockerfile.dev NODE_ENV=dev COMMAND="npm run dev" docker compose up; \
+	DOCKERFILE=Dockerfile.dev NODE_ENV=dev docker compose up; \
 	'
 .PHONY: dev
 
 build-dev: 
 	@echo -e "Building development environment"
-	DOCKERFILE=Dockerfile.dev NODE_ENV=dev COMMAND="npm run dev" docker compose build
+	DOCKERFILE=Dockerfile.dev CLIENT_DOCKERFILE=Dockerfile.dev NODE_ENV=dev docker compose build
 .PHONY: build-dev
 
 prod:

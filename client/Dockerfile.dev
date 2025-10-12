@@ -1,0 +1,14 @@
+FROM node:24-alpine
+WORKDIR /app
+
+# Install dependencies
+COPY package*.json ./
+RUN npm install
+
+# Copy source code
+COPY . .
+
+EXPOSE 80
+
+# Run Vite dev server
+CMD ["npm", "run", "dev"]
