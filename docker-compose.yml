@@ -17,7 +17,7 @@ services:
     build:
       context: ./client
       dockerfile: ${CLIENT_DOCKERFILE:-Dockerfile}
-    container_name: myapp-client
+    container_name: client
     volumes:
       - ./client/src:/app/src
       - ./client/public:/app/public

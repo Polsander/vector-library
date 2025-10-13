@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import logo from "../../assets/logo.svg";
+import { TbSunMoon } from "react-icons/tb";
 
 export const Navbar = () => {
 
@@ -9,9 +11,11 @@ export const Navbar = () => {
   }
 
   return (
-    <div className='px-16 my-5 flex bg-weird'>
-        <h4>Architect Vectors</h4>
-        <button onClick={handleThemeChange}>Mode</button>
-    </div>
+    <nav className='px-16 py-5 flex bg-bg grid grid-cols-2 border-b-1 border-faded items-center'>
+      <h4 className='font-bold grid-row text-text flex items-center text-2xl'><img className='h-[3em] w-[3em] pr-2' src={logo}/>Vector Architect</h4>
+      <div className='flex justify-end'>
+        <button className='' onClick={handleThemeChange}><TbSunMoon className='w-5 h-5'/></button>
+      </div>
+    </nav>
   )
 }

@@ -5,8 +5,9 @@
 /* Components */
 @import "./button.css";
 
-html {
+html, body {
     font-family: "roboto";
+    height: 100%;
 }
 
 

@@ -9,16 +9,16 @@
 }
 
 [data-theme='dark'] {
-    --bg: rgb(76, 75, 75);
+    --bg: rgb(82, 81, 81);
     --text: rgb(233, 232, 232);
-    --faded: rgb(102, 102, 102);
+    --faded: rgb(117, 117, 117);
     --faded-hover: rgb(102, 102, 102, 0.849);
 
     --nav-bg: rgb(228, 226, 226);
 }
 
 @theme {
-    --color-weird:  var(--bg);
+    --color-bg:  var(--bg);
     --color-text: var(--text);
     --color-faded: var(--faded);
     --color-faded-hover: var(--faded-hover);
