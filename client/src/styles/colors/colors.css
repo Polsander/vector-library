@@ -6,6 +6,7 @@
     --faded-hover: rgba(207, 207, 207, 0.849);
 
     --nav-bg: white;
+    --side-bg: #f4f4f4;
 }
 
 [data-theme='dark'] {
@@ -15,6 +16,7 @@
     --faded-hover: rgb(102, 102, 102, 0.849);
 
     --nav-bg: rgb(228, 226, 226);
+    --side-bg: #686868;
 }
 
 @theme {
@@ -24,5 +26,6 @@
     --color-faded-hover: var(--faded-hover);
     
     --color-nav-bg: var(--nav-bg);
+    --color-side-bg: var(--side-bg);
 
 }

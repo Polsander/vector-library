@@ -1,4 +1,5 @@
-import { Navbar } from "../../components/layout/Navbar"
+import { Navbar } from "../../components/layout/Navbar";
+import { Sidebar } from "../../components/layout/Sidebar";
 
 
 import { Outlet } from 'react-router'
@@ -9,10 +10,15 @@ import { Outlet } from 'react-router'
 
 export const MainWrapper = () => {
     return (
-        <div>
+        <div className="flex flex-col h-full">
             <Navbar />
-            <div className="architect_vector_content">
-                <Outlet />
+            <div className="flex flex-1">
+                <section className="">
+                    <Sidebar />
+                </section>
+                <div className="architect_vector_content">
+                    <Outlet />
+                </div>
             </div>
         </div>
     )

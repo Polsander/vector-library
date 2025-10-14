@@ -1,0 +1,53 @@
+.sidebar {
+    width: 10em;
+    background-color: var(--side-bg);
+    transition: width 0.3s ease;
+}
+
+.sidebar.collapsed {
+    width: 0em;
+    margin: 0;
+    padding: 0;
+    content-visibility: hidden;
+}
+
+.inner_border {
+    margin-left: 5px;
+    border-right: 1px solid;
+    padding-right: 10px;
+    margin-right: 2em;
+}
+
+.mid_section {
+    position: relative;
+    display: flex;
+    width: 1.5em;
+    left: 98%;
+    border-right: solid 1px;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    border-radius: 0px 10px 10px 0px;
+    border-color: var(--faded);
+
+    padding: 5px;
+    align-items: center;
+    background-color: var(--side-bg);
+
+    cursor: pointer;
+}
+
+.categories {
+    li {
+        display: flex;
+        padding-left: 20px;
+        padding-top: 3px;
+        margin-top: 7px;
+        padding-bottom: 3px;
+
+        &:hover {
+            background-color: var(--faded);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+}

@@ -10,12 +10,14 @@ html, body {
     height: 100%;
 }
 
-
+#root {
+    height: 100%;
+}
 
 .architect_vector_content {
     background-color: var(--bg);
-    padding-left: 10em;
-    padding-right: 2em;
+    /* padding-left: 10em; */
+    /* padding-right: 2em; */
 
     p {
         color: var(--text);
