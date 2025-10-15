@@ -11,6 +11,9 @@ export const Sidebar = () => {
         setHideSidebar(!hideSidebar)
     };
 
+    //TODO: @Oliver - The mobile responsiveness of the sidebar needs to be eliminated. Keep it closed and if the arrow is pressed, a full screen modal comes instead with
+    //TODO: filter options.
+
     return (
         <div className={` h-full flex`}>
             <div className={`pt-6 pl-6 ${styles.sidebar} ${hideSidebar ? styles.collapsed : ''}`}>

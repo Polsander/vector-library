@@ -13,7 +13,7 @@ export const MainWrapper = () => {
         <div className="flex flex-col h-full">
             <Navbar />
             <div className="flex flex-1">
-                <section className="">
+                <section className="sticky top-0 h-[calc(100vh)]">
                     <Sidebar />
                 </section>
                 <div className="architect_vector_content">
