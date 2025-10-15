@@ -11,6 +11,7 @@ export const Landing = () => {
         <DisplayCard/>
         <DisplayCard/>
         <DisplayCard/>
+        {/* <DisplayCard/>
         <DisplayCard/>
         <DisplayCard/>
         <DisplayCard/>
@@ -24,7 +25,7 @@ export const Landing = () => {
         <DisplayCard/>
         <DisplayCard/>
         <DisplayCard/>
-        <DisplayCard/>
+        <DisplayCard/> */}
 
     </div>
   )
