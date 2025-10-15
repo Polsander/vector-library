@@ -1,13 +1,19 @@
 
 button {
-    background-color: var(--faded);
-    color: var(--text);
     padding: 10px;
     border: 0.5px;
     border-radius: 10px;
+
+    
+
+    &.standard {
+        background-color: var(--faded);
+        color: var(--text);
+    }
 
     &:hover{
         cursor: pointer;
         background-color: var(--faded-hover);
     }
+
 }

@@ -27,7 +27,7 @@
     border-top: solid 1px;
     border-bottom: solid 1px;
     border-radius: 0px 10px 10px 0px;
-    border-color: var(--faded);
+    border-color: var(--outline);
 
     padding: 5px;
     align-items: center;
@@ -43,6 +43,7 @@
         padding-top: 3px;
         margin-top: 7px;
         padding-bottom: 3px;
+        color: var(--text);
 
         &:hover {
             background-color: var(--faded);

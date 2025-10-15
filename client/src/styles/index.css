@@ -16,8 +16,8 @@ html, body {
 
 .architect_vector_content {
     background-color: var(--bg);
-    /* padding-left: 10em; */
-    /* padding-right: 2em; */
+    padding: 2em;
+    width: 100%;
 
     p {
         color: var(--text);

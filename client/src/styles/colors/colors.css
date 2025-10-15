@@ -4,19 +4,21 @@
     --text: black;
     --faded: rgb(231, 231, 231);
     --faded-hover: rgba(207, 207, 207, 0.849);
+    --outline: #BFBFBF;
 
     --nav-bg: white;
     --side-bg: #f4f4f4;
 }
 
 [data-theme='dark'] {
-    --bg: rgb(82, 81, 81);
+    --bg: #19314e;
     --text: rgb(233, 232, 232);
-    --faded: rgb(117, 117, 117);
-    --faded-hover: rgb(102, 102, 102, 0.849);
+    --faded: #10665c85;
+    --faded-hover: #10665c48;
+    --outline: black;
 
     --nav-bg: rgb(228, 226, 226);
-    --side-bg: #686868;
+    --side-bg: #2a4464;
 }
 
 @theme {
@@ -24,6 +26,7 @@
     --color-text: var(--text);
     --color-faded: var(--faded);
     --color-faded-hover: var(--faded-hover);
+    --color-outline: var(--outline);
     
     --color-nav-bg: var(--nav-bg);
     --color-side-bg: var(--side-bg);
