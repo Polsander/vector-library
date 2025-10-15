@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
 import styles from "./Sidebar.module.css";
 

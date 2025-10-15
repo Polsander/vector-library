@@ -20,3 +20,5 @@ Dockerfile*
 .vscode
 .idea
 *.swp
+
+package-lock.json
