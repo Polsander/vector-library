@@ -1,8 +1,31 @@
+import { DisplayCard } from "../../components/cards/DisplayCard";
 
 export const Landing = () => {
+
+
   return (
-    <>
-        <p>Hello world lol</p>
-    </>
+    <div className="flex flex-wrap">
+        <DisplayCard/>
+        <DisplayCard/>
+        <DisplayCard/>
+        <DisplayCard/>
+        <DisplayCard/>
+        <DisplayCard/>
+        <DisplayCard/>
+        <DisplayCard/>
+        <DisplayCard/>
+        <DisplayCard/>
+        <DisplayCard/>
+        <DisplayCard/>
+        <DisplayCard/>
+        <DisplayCard/>
+        <DisplayCard/>
+        <DisplayCard/>
+        <DisplayCard/>
+        <DisplayCard/>
+        <DisplayCard/>
+        <DisplayCard/>
+
+    </div>
   )
 }

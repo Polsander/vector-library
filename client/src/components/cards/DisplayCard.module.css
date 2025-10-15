@@ -1,0 +1,15 @@
+
+.display {
+    background-color: var(--card-bg);
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: var(--faded);
+    display: flex;
+    flex-direction: column;
+
+
+    &:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+}

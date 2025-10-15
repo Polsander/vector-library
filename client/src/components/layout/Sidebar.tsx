@@ -28,8 +28,8 @@ export const Sidebar = () => {
                 </div>
                 <div className={`h-10/100 ${styles.mid_section}`} onClick={handleToggleSidebar} onDrag={handleToggleSidebar}>
                     {!hideSidebar ?
-                        <AiFillCaretLeft/> :
-                        <AiFillCaretRight />
+                        <AiFillCaretLeft className='text-text'/> :
+                        <AiFillCaretRight className='text-text'/>
                     }
                 </div>
                 <div className={`h-45/100 border-r-1 border-outline`}>

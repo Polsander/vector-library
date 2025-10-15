@@ -1,19 +1,11 @@
-// import { Card } from '@chakra-ui/react'
+import React from 'react'
 
-// export const VectorCard = () => {
-//   return (
-//     <>
-//         <Card.Root>
-//             <Card.Header>
-//                 Header Here
-//             </Card.Header>
-//             <Card.Body>
-//                 Content Here
-//             </Card.Body>
-//             <Card.Footer>
-//                 Footer Here
-//             </Card.Footer>
-//         </Card.Root>
-//     </>
-//   )
-// }
+export const VectorCard = () => {
+  return (
+    <>
+        {/* <image/> */}
+        <div>Generic Low Res Image</div>
+    </>
+  )
+}
+

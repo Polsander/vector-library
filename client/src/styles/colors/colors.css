@@ -8,6 +8,7 @@
 
     --nav-bg: white;
     --side-bg: #f4f4f4;
+    --card-bg: #f4f4f4;
 }
 
 [data-theme='dark'] {
@@ -19,6 +20,7 @@
 
     --nav-bg: rgb(228, 226, 226);
     --side-bg: #2a4464;
+    --card-bg: #3e5b7e;
 }
 
 @theme {
@@ -30,5 +32,6 @@
     
     --color-nav-bg: var(--nav-bg);
     --color-side-bg: var(--side-bg);
+    --color-card-bg: var(--card-bg);
 
 }
